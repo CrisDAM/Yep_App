@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pruebas.yep_cristina_boto.MainActivity">
+
+    <item android:id="@+id/action_a"
+        android:title="@string/action_a"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_action_a"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_b"
+        android:title="@string/action_b"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_action_b"
+        app:showAsAction="always" />
+
+</menu>

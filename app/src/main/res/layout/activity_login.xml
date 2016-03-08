@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <TextView
+        android:id="@+id/txtNom"
+        style="@style/TitleStyle" />
+
+    <TextView
+        android:id="@+id/txtSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNom"
+        android:text="@string/txt_subtitulo"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        android:layout_below="@+id/txtSub"
+        style="@style/LinearStyle">
+
+        <EditText
+            android:id="@+id/editUser"
+            android:inputType="textPersonName"
+            android:hint="@string/txt_username"
+            style="@style/EditTextStyle" >
+
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/editPass"
+            android:inputType="textPassword"
+            android:hint="@string/txt_pass"
+            style="@style/EditTextStyle"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:text="@string/btn_entrar"
+        android:onClick="onClickEntrar"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        style="@style/ButtonStyle"/>
+
+    <TextView
+        android:id="@+id/txt_Reg"
+        android:text="@string/texto_registro"
+        android:onClick="onClickRegistro"
+        style="@style/TxtRegistroStyle" />
+
+</RelativeLayout>

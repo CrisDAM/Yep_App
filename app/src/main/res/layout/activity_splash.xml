@@ -1,0 +1,31 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/primary">
+
+    <TextView
+        android:text="@string/app_name"
+        android:id="@+id/txtTitulo"
+        android:textSize="120sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:shadowColor="#84000000"
+        android:shadowDx="18"
+        android:shadowDy="6"
+        android:shadowRadius="1.8"
+        style="@style/TextTitleStyle" />
+
+    <TextView
+        android:text="@string/txt_subtitulo"
+        android:id="@+id/txtSubtitulo"
+        android:textSize="50sp"
+        android:layout_below="@+id/txtTitulo"
+        style="@style/TextTitleStyle"/>
+</RelativeLayout>
+
